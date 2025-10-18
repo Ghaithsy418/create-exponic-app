@@ -9,5 +9,5 @@ mongoose
   .then(() => console.log('Successfully connected to database'));
 
 app.listen(port, () => {
-  console.log(`Exponic.js is running at http://localhost:${port}`);
+  console.log(`Exponic.js is running at http:localhost:${port}`);
 });

@@ -75,8 +75,8 @@ async function main() {
 
     console.log('\n🚀 Success! Your new project is ready.');
     console.log(`\nTo get started, run the following commands:`);
-    console.log(`   cd ${projectName}`);
-    console.log(`   npm run dev`);
+    console.log(chalk.magenta(`   cd ${projectName}`));
+    console.log(chalk.magenta(`   npm run dev`));
   } catch (error) {
     if (error.code === 'EEXIST') {
       console.error(

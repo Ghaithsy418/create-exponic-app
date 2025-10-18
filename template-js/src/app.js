@@ -1,12 +1,9 @@
-import express from 'express';
+import express from "express"
+import morgan from "morgan"
 
-const app = express();
-const port = 3000;
+exoprt const app = express();
 
-app.get('/', (req, res) => {
-  res.send('Hello from your new Express + JavaScript App!');
-});
+if(process.env.NODE_ENV === "development") app.use(morgan("dev"))
 
-app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
-});
+app.use(express.json());
+app.use(express.static("/public"));
