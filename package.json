@@ -1,0 +1,19 @@
+{
+  "name": "create-exponic-app",
+  "version": "1.0.0",
+  "description": "A CLI tool to generate a delivery express app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "create-my-express-app": "./index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "fs-extra": "^11.3.1"
+  }
+}
